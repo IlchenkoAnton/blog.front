@@ -28,9 +28,6 @@ module.exports = {
             filename: 'index.html',
             template: 'src/index.html',
             files: {
-                css: [
-                    "node_modules/bootstrap/dist/css/bootstrap.min.css"
-                ],
                 js: [
                     "dist/bundle.js"
                 ]
