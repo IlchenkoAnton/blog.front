@@ -19,14 +19,19 @@ module.exports = {
                     'vue-style-loader',
                     'css-loader'
                 ]
+            }, {
+                test: /\.(png|jpg|gif)$/,
+                use: [
+                    {
+                        loader: 'file-loader'
+                    }
+                ]
             }
         ]
     },
     resolve: {
         alias: {
-            'vue': 'vue/dist/vue.common.js',
-            'src': path.resolve(__dirname, './src'),
-            'components': path.resolve(__dirname, './src/components')
+            'vue': 'vue/dist/vue.common.js'
         }
     },
     plugins: [
