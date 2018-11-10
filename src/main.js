@@ -18,5 +18,5 @@ requireComponent.keys().forEach((fileName) => {
 Vue.use(VueRouter);
 
 new Vue({
-        router
-    }).$mount('#app');
+    router
+}).$mount('#app');
