@@ -6,14 +6,15 @@
         </title>
     </head>
     <body>
-        <main class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div id="app">
-                        Тут приложение
-                    </div>
+        <div id="app">
+            <header class="p-3 mb-2 backg bg-info">
+                <div class="h3 text-light">
+                    Блог
                 </div>
-            </div>
-        </main>
+            </header>
+            <main class="container">
+                <router-view></router-view>
+            </main>
+        </div>
     </body>
 </html>
