@@ -1,8 +1,8 @@
 import VueRouter from 'vue-router';
 
-import ListPage from './pages/list/list.vue';
-import PostPage from './pages/post/post.vue';
-import NotFoundPage from './pages/not-found/not-found.vue';
+import ListPage from './pages/list-page/list-page.vue';
+import PostPage from './pages/post-page/post-page.vue';
+import NotFoundPage from './pages/not-found-page/not-found-page.vue';
 
 const routes = [
     {
