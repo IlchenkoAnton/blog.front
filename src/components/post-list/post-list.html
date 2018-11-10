@@ -1,3 +1,33 @@
-<div>
-    blog-post-list
+<div class="post-list">
+    <div v-if="!postList || postList.length">
+        <p class="lead text-center">
+            Список постов пуст
+        </p>
+    </div>
+    <div class="list-group"
+         v-if="postList && postList.length">
+        <router-link v-for="post in postList"
+                     :key="post.id"
+           :to="'/post/' + post.id"
+           class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">
+                    {{ post.title }}
+                </h5>
+                <small>{{ post.date }}</small>
+            </div>
+            <p class="mb-1">
+                {{ post.description }}
+            </p>
+            <small>
+                {{ post.author }}
+            </small>
+            <div>
+                <span v-for="tag in post.tags"
+                      class="badge badge-secondary p-1 mr-1">
+                    {{ tag }}
+                </span>
+            </div>
+        </router-link>
+    </div>
 </div>
